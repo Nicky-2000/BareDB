@@ -11,3 +11,14 @@
 # # Register tests with CTest
 # add_test(NAME CalcTest COMMAND test_calc)
 # add_test(NAME MainTest COMMAND test_main)
+
+
+# Add Google Test
+add_subdirectory(googletest)
+
+# Unit tests
+add_subdirectory(unit)
+
+# Integration tests
+add_subdirectory(integration)
+

@@ -9,4 +9,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # Add subdirectories
 add_subdirectory(BareDBLib)
 add_subdirectory(BareDB)
-add_subdirectory(tests)
+
+enable_testing()
+option(BUILD_TESTS "Enable tests" ON)
+if (BUILD_TESTS)
+    add_subdirectory(tests)
+endif()
