@@ -1,32 +1,57 @@
-# Prerequisites
-*.d
+# Build directories
+/build/
+/bin/
 
-# Compiled Object files
-*.slo
-*.lo
+# Temporary files and editor-specific files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# CMake-generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Compiled object files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
+*.lo
 *.la
+*.so
+*.dll
+*.dylib
 *.a
 *.lib
 
-# Executables
+# Executable files
 *.exe
 *.out
 *.app
+BareDB  # If you use a specific name for your binary
+
+# Google Test (submodule)
+tests/googletest/build/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Coverage and profiling files
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+
+# Test results
+/tests/*.testlog
+
+# Generated documentation
+/docs/
