@@ -10,6 +10,7 @@ cmake ..
 make
 
 # Copy the built executable to the bin/ directory
+rm -rf ../bin/
 mkdir -p ../bin/
 cp ./BareDB/BareDB ../bin/
 
