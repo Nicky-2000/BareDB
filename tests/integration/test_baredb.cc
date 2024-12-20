@@ -9,6 +9,7 @@ TEST(BareDBTest, InsertAndRetrieve) {
 
     EXPECT_TRUE(db.insert("key2", "value2"));
     EXPECT_EQ(db.get("key2"), "value2");
+    
 
     EXPECT_FALSE(db.insert("key1", "value3"));  // Duplicate key should fail
     EXPECT_EQ(db.get("key1"), "value1");        // Original value remains
