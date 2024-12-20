@@ -2,7 +2,8 @@
 #include "BareDB.h"
 #include "calc/Calc.h"
 
-int main() {
+int main()
+{
     BareDB db;
 
     // Manual testing
@@ -13,7 +14,8 @@ int main() {
     std::cout << "key2: " << db.get("key2") << std::endl;
 
     // Attempt to overwrite key1
-    if (!db.insert("key1", "new_value")) {
+    if (!db.insert("key1", "new_value"))
+    {
         std::cout << "Key 'key1' already exists with value: " << db.get("key1") << std::endl;
     }
 

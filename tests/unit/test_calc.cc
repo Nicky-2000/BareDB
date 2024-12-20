@@ -3,7 +3,8 @@
 #include <iostream>
 
 // Test the addition function
-TEST(CalcTest, AddOperation) {
+TEST(CalcTest, AddOperation)
+{
     Calc calc;
     EXPECT_EQ(calc.add(3, 2), 5);
     EXPECT_EQ(calc.add(-1, 1), 0);
@@ -11,7 +12,8 @@ TEST(CalcTest, AddOperation) {
 }
 
 // Test the subtraction function
-TEST(CalcTest, SubOperation) {
+TEST(CalcTest, SubOperation)
+{
     Calc calc;
     EXPECT_EQ(calc.sub(5, 3), 2);
     EXPECT_EQ(calc.sub(0, 5), -5);
@@ -19,7 +21,8 @@ TEST(CalcTest, SubOperation) {
 }
 
 // Test the multiplication function
-TEST(CalcTest, MulOperation) {
+TEST(CalcTest, MulOperation)
+{
     Calc calc;
     EXPECT_EQ(calc.mul(4, 3), 12);
     EXPECT_EQ(calc.mul(-2, 3), -6);
