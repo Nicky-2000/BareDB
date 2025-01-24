@@ -10,3 +10,4 @@ public:
 };
 
 #endif // CALCLIB_INCLUDE_CALC_CALC_H_
+
